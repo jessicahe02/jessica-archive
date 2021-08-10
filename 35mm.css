@@ -1,0 +1,76 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	font-family:"apercu mono";
+	display:flex;
+}
+
+.sidebar {
+	width:170px;
+	/*position: -webkit-sticky;
+    position: sticky;*/
+    position:fixed;
+    left: 0;
+    background:white;
+    padding:50px;
+    z-index:999;
+    height:100vh;
+}
+
+.work-dropdown {
+	display:none;
+	margin-left:15px;
+	animation-name:fade;
+	animation-duration: 0.3s;
+}
+
+h1 {
+	font-size:1.5em;
+	max-width:100%;
+	margin-bottom:100px;
+	margin-right:50px;
+}
+
+a, .dropdown-btn {
+	font-family:"apercu mono";
+	font-size:0.8em;
+	text-decoration:none;
+	color:black;
+	border:none;
+	background:none;
+	outline:none;
+}
+
+a:hover, .dropdown-btn:hover {
+	text-decoration:underline;
+	color:black;
+	outline:none;
+}
+
+@keyframes fade {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+.wrapper {
+	display:flex;
+	flex-wrap:nowrap;
+	max-width:78%;
+	font-size:0.8em;
+	margin-left:240px;
+}
+
+.scroll-column {
+	display:flex;
+	max-height:100vh;
+	/*padding:50px 0 50px 0;*/
+}
+
+.scroll-column img {
+	max-height:100%;
+	max-width:auto;
+	padding:30px;
+}

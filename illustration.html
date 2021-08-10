@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+	<title>jessica he</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" text="text/css" href="digital.css">
+
+	<style type="text/css" media="all">@import url("apercu_mono.css");</style>
+</head>
+<body>
+
+<!--sidebar-->
+
+	<div class="sidebar">
+		<h1><a href="index.html">jessica he</a></h1>
+		<div class="menu">
+			<p><a href="about.html">about</a></p>
+			<button class="dropdown-btn">work</button>
+
+<!--pages-->
+
+				<div class="work-dropdown">
+					<p><a href="design.html">design</a>
+					<p><a href="illustration.html">illustration</a>
+					<p><a href="photography.html">photography</a>
+				</div>
+		</div>
+	</div>
+
+<!--main-->
+
+	<div class="wrapper">
+		<div class="scroll-column">
+			<img src="illustration/illus_01.png">
+			<img src="illustration/illus_02.png">
+			<img src="illustration/illus_03.png">
+			<img src="illustration/illus_04.png">
+			<img src="illustration/illus_05.png">
+		</div>
+	</div>
+
+<!--javascript-->
+
+	<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var dropdownContent = this.nextElementSibling;
+		if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+	</script>
+</body>
+</html>

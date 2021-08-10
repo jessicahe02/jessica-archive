@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+	<title>jessica he</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" text="text/css" href="now.css">
+
+	<style type="text/css" media="all">@import url("apercu_mono.css");</style>
+</head>
+<body>
+
+<!--sidebar-->
+
+	<div class="sidebar">
+		<h1><a href="index.html">jessica he</a></h1>
+		<div class="menu">
+			<p><a href="about.html">about</a></p>
+			<p><a href="contact.html">contact</a></p>
+			<button class="dropdown-btn">work</button>
+
+<!--pages-->
+
+				<div class="work-dropdown">
+					<p><a href="design.html">design</a>
+					<p><a href="illustration.html">illustration</a>
+					<p><a href="photography.html">photography</a>
+				</div>
+		</div>
+	</div>
+
+<!--now-->
+
+	<div class="wrapper">
+		<div class="now">
+			<h1><center>now</center></h1>
+			<br>academic
+			<ul>
+				<li>UX design</li>
+				<li>motion graphics</li>
+			</ul>
+			<br>personal
+			<ul>
+				<li>running another charity zine</li>
+				<li>trying to learn how to cook yummy things!</li>
+			</ul>
+		</div>
+	</div>
+
+<!--javascript-->
+
+	<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var dropdownContent = this.nextElementSibling;
+		if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+	</script>
+
+</body>
+</html>

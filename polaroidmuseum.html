@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+	<title>jessica he / the polaroid museum</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" text="text/css" href="good-night.css">
+
+	<style type="text/css" media="all">@import url("apercu_mono.css");</style>
+</head>
+<body>
+
+<!--sidebar-->
+
+	<div class="sidebar">
+		<h1><a href="index.html">jessica he</a></h1>
+		<div class="menu">
+			<p><a href="about.html">about</a></p>
+			<button class="dropdown-btn">work</button>
+
+<!--pages-->
+
+				<div class="work-dropdown">
+					<p><a href="design.html">design</a>
+					<p><a href="illustration.html">illustration</a>
+					<p><a href="photography.html">photography</a>
+				</div>
+		</div>
+	</div>
+
+<!--main-->
+
+	<div class="wrapper">
+		<div class="column1">
+			<br>
+			<br>
+			<br>
+			<h2>the polaroid museum</h2>
+			<p>Polaroid plays an important role in the advent of commercial instant cameras as we know it today; The Polaroid Museum is intended to educate visitors on the history of Polaroid and the evolution of instant photography. Instant photography isn't exclusive to Polaroid, but the role the company played is significant.</p>
+			<br>
+			<br>
+			<br>
+			<img src="museum/branding_pm_logo.png">
+			<img src="museum/branding_poster.png">
+			<img src="museum/branding_brochure.png">
+			<img src="museum/branding_brochure_01.png">
+			<img src="museum/branding_brochure_02.png">
+			<img src="museum/collateral.png">
+			<hr>
+			<h2>research & process</h2>
+			<br>
+			<img src="museum/pm-1.png">
+			<img src="museum/pm-2.png">
+			<img src="museum/pm-3.png">
+			<img src="museum/pm-4.png">
+			<img src="museum/pm-5.png">
+		</div>
+	</div>
+
+<!--javascript-->
+
+	<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var dropdownContent = this.nextElementSibling;
+		if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+	</script>
+</body>
+</html>

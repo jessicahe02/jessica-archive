@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+	<title>jessica he</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" text="text/css" href="35mm.css">
+
+	<style type="text/css" media="all">@import url("apercu_mono.css");</style>
+</head>
+<body>
+
+<!--sidebar-->
+
+	<div class="sidebar">
+		<h1><a href="index.html">jessica he</a></h1>
+		<div class="menu">
+			<p><a href="about.html">about</a></p>
+			<button class="dropdown-btn">work</button>
+
+<!--pages-->
+
+				<div class="work-dropdown">
+					<p><a href="design.html">design</a>
+					<p><a href="illustration.html">illustration</a>
+					<p><a href="photography.html">photography</a>
+				</div>
+		</div>
+	</div>
+
+<!--main-->
+
+	<div class="wrapper">
+		<div class="scroll-column">
+			<img src="35mm/40300005 copy.jpg">
+			<img src="35mm/40300017 copy.jpg">
+			<img src="35mm/40300031 copy.jpg">
+			<img src="35mm/40300032-01 copy.jpg">
+			<img src="35mm/40300020-1 copy.jpg">
+			<img src="35mm/000463380015 copy.jpg">
+			<img src="35mm/IMG_20170615_0008 copy.jpg">
+			<img src="35mm/000228310009.jpg">
+			<img src="35mm/2019-01-04-04.jpg">
+			<img src="35mm/000249900011_1 copy.jpg">
+			<img src="35mm/000249910014_1.jpg">
+			<img src="35mm/000288710010 copy.jpg">
+			<img src="35mm/000249910029 copy.jpg">
+			<img src="35mm/000463380002 copy.jpg">
+			<img src="35mm/000463380010 copy.jpg">
+			<img src="35mm/54450015 copy.jpg">
+		</div>
+	</div>
+
+<!--javascript-->
+
+	<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var dropdownContent = this.nextElementSibling;
+		if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+	</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+	<title>jessica he / good night</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" text="text/css" href="good-night.css">
+
+	<style type="text/css" media="all">@import url("apercu_mono.css");</style>
+</head>
+<body>
+
+<!--sidebar-->
+
+	<div class="sidebar">
+		<h1><a href="index.html">jessica he</a></h1>
+		<div class="menu">
+			<p><a href="about.html">about</a></p>
+			<button class="dropdown-btn">work</button>
+
+<!--pages-->
+
+				<div class="work-dropdown">
+					<p><a href="design.html">design</a>
+					<p><a href="illustration.html">illustration</a>
+					<p><a href="photography.html">photography</a>
+				</div>
+		</div>
+	</div>
+
+<!--main-->
+
+	<div class="wrapper">
+		<div class="column1">
+			<br>
+			<br>
+			<br>
+			<h2>good night</h2>
+			<p>The final project from my branding class; good night is an organic milk brand made for children and targeted for parents. The visual identity is simple with illustrative features to appeal to children.
+			<br>
+			<br>
+			<br>
+			<img src="good night/goodnightlogo.png">
+			<img src="good night/milk_mock.png">
+			<img src="good night/milk_web_01.png">
+			<img src="good night/devices.png">
+			<hr>
+			<h2>research & process</h2>
+			<br>
+			<img src="good night/gn-1.png">
+			<img src="good night/gn-2.png">
+			<img src="good night/gn-3.png">
+			<img src="good night/gn-4.png">
+			<img src="good night/gn-5.png">
+			<img src="good night/gn-6.png">
+		</div>
+	</div>
+
+<!--javascript-->
+
+	<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var dropdownContent = this.nextElementSibling;
+		if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+	</script>
+</body>
+</html>

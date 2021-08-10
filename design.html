@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+	<title>jessica he / design</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" text="text/css" href="design.css">
+
+	<style type="text/css" media="all">@import url("apercu_mono.css");</style>
+</head>
+<body>
+
+<!--sidebar-->
+
+	<div class="sidebar">
+		<h1><a href="index.html">jessica he</a></h1>
+		<div class="menu">
+			<p><a href="about.html">about</a></p>
+			<button class="dropdown-btn">work</button>
+
+<!--pages-->
+
+				<div class="work-dropdown">
+					<p><a href="design.html">design</a>
+					<p><a href="illustration.html">illustration</a>
+					<p><a href="photography.html">photography</a>
+				</div>
+		</div>
+	</div>
+
+<!--main-->
+
+	<div class="wrapper">
+		<div class="column1">
+			<br>
+			<br>
+			<a href="good-night.html"><img src="good night/goodnightlogo.png"></a>
+			<p><i>good night</i></p>
+			<p>branding</p>
+			<br>
+			<a href="typespecimen.html"><img src="type specimen/specimen_05.png"></a>
+			<p><i>officina type specimen book</i></p>
+			<p>typography</p>
+			<br>
+		</div>
+		<div class="column2">
+			<br>
+			<a href="playlife.html"><img src="playlife/playlife_01.jpeg"></a>
+			<p><i>playlife</i></p>
+			<p>branding / papercraft</p>
+			<br>
+			<a href="polaroidmuseum.html"><img src="museum/branding_pm_logo.png"></a>
+			<p><i>the polaroid museum</i></p>
+			<p>branding</p>
+			<br>
+			<br>
+		</div>
+	</div>
+
+<!--javascript-->
+
+	<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var dropdownContent = this.nextElementSibling;
+		if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+	</script>
+</body>
+</html>

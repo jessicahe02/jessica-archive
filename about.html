@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+	<title>jessica he / about</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" text="text/css" href="about.css">
+
+	<style type="text/css" media="all">@import url("apercu_mono.css");</style>
+</head>
+<body>
+<!--sidebar-->
+
+	<div class="sidebar">
+		<h1><a href="index.html">jessica he</a></h1>
+		<div class="menu">
+			<p><a href="about.html">about</a></p>
+			<button class="dropdown-btn">work</button>
+
+<!--pages-->
+
+				<div class="work-dropdown">
+					<p><a href="design.html">design</a>
+					<p><a href="illustration.html">illustration</a>
+					<p><a href="photography.html">photography</a>
+				</div>
+		</div>
+	</div>
+
+<!--about-->
+
+	<div class="wrapper">
+		<div class="about">
+			<h1><center>about</center></h1>
+			<p>A design student in Maryland with a lot of interests and a passion for learning.</p>
+			<br>I believe versatility in a person is extremely beneficial to their success, so I'm currently experimenting with my work and trying lots of new things. I also really want to use my power as a creator to help people, so I'm trying to find ways to do that!</p>
+		</div>
+		<!-- <br><a href="now.html">what I'm up to now</a> -->
+	</div>
+
+<!--javascript-->
+
+	<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var dropdownContent = this.nextElementSibling;
+		if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+	</script>
+	
+</body>
+</html>

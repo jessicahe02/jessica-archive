@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+	<title>jessica he</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" text="text/css" href="polaroid.css">
+
+	<style type="text/css" media="all">@import url("apercu_mono.css");</style>
+</head>
+<body>
+
+<!--sidebar-->
+
+	<div class="sidebar">
+		<h1><a href="index.html">jessica he</a></h1>
+		<div class="menu">
+			<p><a href="about.html">about</a></p>
+			<button class="dropdown-btn">work</button>
+
+<!--pages-->
+
+				<div class="work-dropdown">
+					<p><a href="design.html">design</a>
+					<p><a href="illustration.html">illustration</a>
+					<p><a href="photography.html">photography</a>
+				</div>
+		</div>
+	</div>
+
+<!--main-->
+
+	<div class="wrapper">
+		<div class="scroll-column">
+			<img src="polaroid/2017-09-23-1 copy.jpg">
+			<img src="polaroid/2017-10-03-01 copy.png">
+			<img src="polaroid/2017-10-04-02 copy.png">
+			<img src="polaroid/2017-12-16-01 copy.jpg">
+			<img src="polaroid/2018-01-23-01 copy.jpg">
+			<img src="polaroid/2018-01-25-01 copy.jpg">
+			<img src="polaroid/2018-01-27-04 copy.jpg">
+			<img src="polaroid/2018-03-09-02 copy.jpg">
+			<img src="polaroid/2018-07-05-01 copy.jpg">
+			<img src="polaroid/2018-07-12_03 copy.jpg">
+			<img src="polaroid/2018-07-12-01 copy.jpg">
+			<img src="polaroid/2018-07-12-02 copy.jpg">
+			<img src="polaroid/2018-07-12-05 copy.jpg">
+			<img src="polaroid/2018-07-18-03 copy.jpg">
+			<img src="polaroid/2018-08-09-01 copy.jpg">
+			<img src="polaroid/2018-08-17-01 copy.jpg">
+			<img src="polaroid/2018-08-18-02 copy.jpg">
+			<img src="polaroid/2018-08-18-01 copy.jpg">
+			<img src="polaroid/2018-09-03-01.jpg">
+			<img src="polaroid/2019-04-06_05 copy.jpg">
+			<img src="polaroid/2019-04-06_06 copy.jpg">
+			<img src="polaroid/2019-05-03-02 copy.jpg">
+			<img src="polaroid/2019-05-03-03 copy.jpg">
+			<img src="polaroid/2019-05-03-05 copy.jpg">
+		</div>
+	</div>
+
+<!--javascript-->
+
+	<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var dropdownContent = this.nextElementSibling;
+		if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+	</script>
+</body>
+</html>
